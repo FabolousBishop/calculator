@@ -64,6 +64,23 @@ def simple_calculator():
             result = calculate(number1, operator, number2)
             print(f"Result of calculation is {result}")
 
+def simple_calculator():
+    end_condition = True
+    while end_condition:
+        print("Podaj pierwszy numer")
+        number1 = ask_for_a_number(False)
+        if number1 == None:
+            end_condition = False
+        else:
+            print("Podaj operator")
+            operator = ask_for_a_operator(True)
+            print("Podaj drugi numer")
+            number2 = ask_for_a_number(True)
+            result = calculate(number1, operator, number2)
+            print(f"Result of calculation is {result}")
+
+print("nowy branch")
+
 
 
 if __name__ == "__main__":
